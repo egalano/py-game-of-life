@@ -10,6 +10,13 @@ def block(grid):
         for x in xrange(len(grid[y])/8,len(grid) - len(grid)/8):
             grid[y][x].create()
 
+def glider(grid):
+    grid[5][5].create()
+    grid[5][6].create()
+    grid[5][7].create()
+    grid[4][7].create()
+    grid[3][6].create()
+    
 def toad(grid):
     raise NotImplementedError
 
